@@ -29,39 +29,22 @@
             * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
                 * Enable inline JS: add 'unsafe-inline' to default-src
         -->
+        
         <meta name="format-detection" content="telephone=no">
         <meta name="msapplication-tap-highlight" content="no">
         <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
         <meta name="color-scheme" content="light dark">
         <link rel="stylesheet" href="css/index.css">
-        <title>TipsMeEasy</title>
+        <title>Tips</title>
     </head>
-    <body>
+    <body onload="showResult()">
         <script src="cordova.js"></script>
-		<script src = "js/index.js"></script>
         <script src="js/tips.js"></script>
-		<form name="input">
-		totalwithouttax:<input type="text" name="totalwithouttax" id="totalwithouttax"/></br>
-	   totalwithtax:<input type="text" name="totalwithtax" id="totalwithtax"/></br>
-	  <input type="button" value="Tip1"/>
-	  <input type="button" value="Tip2"/>
-	  <input type="button" value="Tip3"/>
-	  
-	
-	   <input type = "button" value="Submit" onClick="calculate()"/>
-	   <input type= "reset" value ="Reset"/>
-	   
-	   
-	   </form>
-	   <br></br>
-	   Click<a herf=Total.html>here</a> to view result
-	   
-	  
-	   
-	   
-	   
-	   </div>
-		
-		
+		<div id="result">
+		  Result goes here
+		 </div>
+         <br/><br/>
+         Click <a herf =index.html>here</a>to go back and enter a new values
+        <br/><br/>		 
     </body>
 </html>
